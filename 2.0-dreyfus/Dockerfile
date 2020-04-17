@@ -42,7 +42,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
   && rm /usr/local/bin/tini.asc \
   && chmod +x /usr/local/bin/tini
 
-ENV COUCHDB_VERSION 2.0.0
+ENV COUCHDB_VERSION 2.2.0
 
 # Download dev dependencies
 RUN apt-get update -y -qq && apt-get install -y --no-install-recommends \
